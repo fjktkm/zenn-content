@@ -12,7 +12,14 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install"
+	"postCreateCommand": "yarn install",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"zenn.zenn-preview"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
