@@ -16,7 +16,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"zenn.zenn-preview"
+				"zenn.zenn-preview",
+				"mhutchie.git-graph"
 			]
 		}
 	}
