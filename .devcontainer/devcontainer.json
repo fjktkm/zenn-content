@@ -1,10 +1,11 @@
 {
 	"name": "Node.js",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
-	"runArgs": [
-		"--rm",
-		"-v",
-		"/workspaces/zenn-content/node_modules"
+	"mounts": [
+		{
+			"type": "volume",
+			"target": "${containerWorkspaceFolder}/node_modules"
+		}
 	],
 	"customizations": {
 		"vscode": {
