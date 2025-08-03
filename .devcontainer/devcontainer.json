@@ -1,0 +1,11 @@
+{
+	"name": "Markdown Editing",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"zenn.zenn-preview"
+			]
+		}
+	}
+}
