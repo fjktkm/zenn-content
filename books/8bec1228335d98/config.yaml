@@ -5,13 +5,12 @@ published: false
 price: 0 # 有料の場合200〜5000
 chapters:
   [
-    "01.intro.md",
-    "02.wsl.md",
-    "03.docker.md",
-    "04.vscode.md",
-    "05.devcontainer.md",
-    "06.latex.md",
-    "07.latexmk.md",
-    "08.workshop.md",
-    "09.git.md",
+    "02-wsl.md",
+    "03-docker.md",
+    "04-vscode.md",
+    "05-devcontainer.md",
+    "06-latex.md",
+    "07-latexmk.md",
+    "08-workshop.md",
+    "09-git.md",
   ]
