@@ -1,5 +1,5 @@
 ---
-title: "Dev Container のハンズオン"
+title: "Dev Container の導入"
 ---
 
 ## Dev Container とは
@@ -95,4 +95,4 @@ $ uname -a
 Linux fcdeb5851797 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-以上で Dev Container のハンズオンは完了です．
+以上で Dev Container の導入は完了です．
