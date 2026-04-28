@@ -1,7 +1,7 @@
 title: "Dev Container で始める LaTeX 環境構築"
 summary: "Dev Container を使って LaTeX の執筆環境を構築する手順を丁寧に説明します．"
 topics: [ "latex", "devcontainer", "docker", "wsl", "vscode" ]
-published: false
+published: true
 price: 0 # 有料の場合200〜5000
 chapters:
   [
