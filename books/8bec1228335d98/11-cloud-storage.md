@@ -1,0 +1,57 @@
+---
+title: "クラウドストレージとの統合"
+---
+
+## 中間生成物の出力先の変更
+
+OneDrive や Dropbox などのクラウドストレージ上でリポジトリを管理している場合，LaTeX のコンパイル中間生成物が頻繁に更新されるたびに同期が走り，動作が重くなったり同期エラーが出たりすることがあります．
+
+この問題を解決するため，まずは中間生成物の出力先を変更します．中間生成物の出力先を変更するには，`.latexmkrc` に `$aux_dir` の設定を追加します．プロジェクトフォルダにある `.latexmkrc` を以下のように書き換えてください．
+
+```perl
+$out_dir = '../dist';
+$aux_dir = '../build';
+
+$pdf_mode = 4;
+
+$lualatex = 'lualatex -synctex=1 -interaction=nonstopmode %O %S';
+$bibtex = 'upbibtex %O %B';
+```
+
+この変更により `.aux` や `.log` などの中間生成物が `build/` フォルダに出力されるようになります．
+
+## Docker Volume で同期を防ぐ
+
+中間生成物の出力先の変更が完了したら，次は Docker Volume を使って中間生成物のフォルダをホストと同期しないようにする設定を行います．以下の内容に `devcontainer.json` を書き換えてください．
+
+```json
+{
+    "name": "LaTeX (TeX Live)",
+    "image": "texlive/texlive:latest",
+    "mounts": [
+        {
+            "target": "${containerWorkspaceFolder}/build",
+            "type": "volume"
+        }
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop"
+            ]
+        }
+    }
+}
+```
+
+この変更により `build/` フォルダの中身はホスト OS ではなくコンテナ内の Docker Volume に保存されるようになります．したがって，中間生成物がクラウドストレージに同期されることもなくなります．この手法は Volume トリックと呼ばれ，Node.js の `node_modules` や Python の `.venv` などでもよく使われています．覚えておくと便利なテクニックです．
+
+`devcontainer.json` の編集が完了したら，ホスト環境で `build/` フォルダを削除した上でコンテナをリビルドしてください．
+
+リビルドが完了したら，動作確認を行います．TeX ファイルをコンパイルしてもホスト OS 上の `build/` フォルダには何も生成されないことを確認してください．
+
+以上でクラウドストレージとの統合は完了です．
