@@ -13,4 +13,5 @@ chapters:
     "07-latexmk.md",
     "08-workshop.md",
     "09-git.md",
+    "10-ci.md",
   ]
