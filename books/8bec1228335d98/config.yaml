@@ -4,17 +4,16 @@ topics: [ "latex", "devcontainer", "docker", "wsl", "vscode" ]
 published: true
 price: 0 # 有料の場合200〜5000
 chapters:
-  [
-    "01cc83496d0318.md",
-    "0346c03611c598.md",
-    "3e79df7c2a5fd0.md",
-    "4dcea76ca9bdd8.md",
-    "59f917895fb0f8.md",
-    "74e55ea30f561d.md",
-    "9308fc321d7df0.md",
-    "a0084e077cc8b8.md",
-    "a5644f54259798.md",
-    "cb0a395dfeb518.md",
-    "daf886439eb028.md",
-    "fea78ace18f64d.md",
-  ]
+  - "01cc83496d0318.md"
+  - "0346c03611c598.md"
+  - "3e79df7c2a5fd0.md"
+  - "4dcea76ca9bdd8.md"
+  - "59f917895fb0f8.md"
+  - "74e55ea30f561d.md"
+  - "684b5eb5d97bc8.md"
+  - "9308fc321d7df0.md"
+  - "a0084e077cc8b8.md"
+  - "a5644f54259798.md"
+  - "cb0a395dfeb518.md"
+  - "daf886439eb028.md"
+  - "fea78ace18f64d.md"
