@@ -26,25 +26,23 @@ $bibtex = 'upbibtex %O %B';
 
 ```json
 {
-    "name": "LaTeX (TeX Live)",
-    "image": "texlive/texlive:latest",
-    "mounts": [
-        {
-            "target": "${containerWorkspaceFolder}/build",
-            "type": "volume"
-        }
-    ],
-    "features": {
-        "ghcr.io/devcontainers/features/common-utils:2": {},
-        "ghcr.io/devcontainers/features/git:1": {}
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "James-Yu.latex-workshop"
-            ]
-        }
+  "name": "LaTeX (TeX Live)",
+  "image": "texlive/texlive:latest",
+  "mounts": [
+    {
+      "target": "${containerWorkspaceFolder}/build",
+      "type": "volume"
     }
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["James-Yu.latex-workshop"]
+    }
+  }
 }
 ```
 
