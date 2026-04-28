@@ -5,6 +5,7 @@ published: false
 price: 0 # 有料の場合200〜5000
 chapters:
   [
+    "01-intro.md",
     "02-wsl.md",
     "03-docker.md",
     "04-vscode.md",
@@ -15,4 +16,5 @@ chapters:
     "09-git.md",
     "10-ci.md",
     "11-cloud-storage.md",
+    "12-outro.md",
   ]
