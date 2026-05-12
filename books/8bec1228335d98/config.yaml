@@ -1,6 +1,6 @@
 title: "Dev Container で完全に理解する LaTeX 環境構築"
-summary: "Dev Container を使って LaTeX の執筆環境を構築する手順を丁寧に説明します．"
-topics: [ "latex", "devcontainer", "docker", "wsl", "vscode" ]
+summary: "この Zenn Book では Dev Container を使って LaTeX 環境を構築する手順を解説します．Windows に LaTeX を直接インストールすると非常に長い時間を要するのに対して，Dev Container を使うとインストールにかかる時間を大幅に短縮できます．また，VS Code の LaTeX Workshop 拡張機能を使うことで，Cloud LaTeX や Overleaf と同じようにプレビューを見ながらソーステキストを編集する体験も実現できます．個人が作成した Docker イメージではなく TeX Live 公式の Docker イメージを使用するため，メンテナンス性や信頼性の面でも優れています．Docker をベースにしているため，GitHub Actions を用いた自動ビルドパイプラインの構築とも相性が良いです．Docker や Dev Container を使ったことがない人に向けて丁寧に解説しているので，初心者の人も安心して読み進めることができます．"
+topics: [ "latex", "devcontainer", "docker", "vscode", "windows" ]
 published: true
 price: 0 # 有料の場合200〜5000
 chapters:
