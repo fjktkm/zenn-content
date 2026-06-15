@@ -21,3 +21,11 @@ https://github.com/fjktkm/latex-devcontainer
 https://zenn.dev/fjktkm/articles/f43658e74f5814
 
 https://zenn.dev/fjktkm/articles/6206fd0f4b52d8
+
+LaTeX の執筆に関する参考情報：
+
+https://texwiki.texjp.org/LaTeX%E5%85%A5%E9%96%80
+
+https://gihyo.jp/book/2023/978-4-297-13889-9
+
+https://www.learnlatex.org/ja/
