@@ -1,5 +1,5 @@
 {
-	"name": "Markdown Editing",
+	"name": "Zenn",
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"customizations": {
 		"vscode": {
