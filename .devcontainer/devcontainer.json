@@ -1,10 +1,19 @@
 {
 	"name": "Zenn",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:5-24-trixie",
+	"mounts": [
+		{
+			"source": "node_modules-${devcontainerId}",
+			"target": "${containerWorkspaceFolder}/node_modules",
+			"type": "volume"
+		}
+	],
+	"onCreateCommand": "sudo chown node node_modules",
+	"postCreateCommand": "npm ci",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"zenn.zenn-preview"
+				"esbenp.prettier-vscode"
 			]
 		}
 	}

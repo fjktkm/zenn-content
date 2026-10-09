@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "preview": "zenn preview",
+    "format": "prettier --write \"**/*.md\""
+  },
+  "devDependencies": {
+    "prettier": "^3.9.9",
+    "zenn-cli": "^0.5.5"
+  }
+}
